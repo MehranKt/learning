@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="nike login, nike register">
+    <meta name="author" content="Mehran Kebirtelai">
+    <title>Nike'a Hoş Geldin</title>
+    <style>
+        .container{
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .input{
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .button{
+            width: 100%;
+            border-radius: 30px;
+            background-color: black;
+            color: white;
+            padding-left: 155px;
+            padding-right: 155px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            cursor: pointer;
+        }
+        .button:hover{
+            background-color: #333;
+            border-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://static.nike.com/a/images/f_jpg,q_auto:eco/61b4738b-e1e1-4786-8f6c-26aa0008e80b/swoosh-logo-black.png" alt="logo" width="50px">
+            </div>
+            <h2>Haydi seni Nike Üyesi yapalım.</h2>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+        <form action="" id="form" target="_blank" method="get">
+            <input type="text" class="input" id="name" name="name" value="" placeholder="Adı" minlength="2" maxlength="11" required>
+            <input type="text" class="input" id="surname" name="surname" value="" placeholder="Soyadı" minlength="2" maxlength="11" required>
+            <br />
+            <input type="email" class="input" id="email" name="email" value="" placeholder="Email">
+            <br />
+            <input type="password" class="input" id="password" name="password" value="" placeholder="Şifre">
+            <br />
+            <input type="password" class="input" id="repassword" name="repassword" value="" placeholder="Şifrenizi tekrar giriniz">
+            <br />     
+            <small>X En az 8 karakter</small>
+            <br />
+            <small>X Büyük harf, küçük harf ve bir rakam</small>
+            <br /><br />
+            <select name="Gender" class="input" id="gender" required>
+                <option value="" disabled selected>Alisveris Tercihi</option>
+                <option value="">Erkek</option>
+                <option value="">Kadin  </option>
+            </select>
+            <br />
+            <input type="date" class="input" id="date" placeholder="Doğum Tarihi"> 
+            <!-- sorus niye place holder date de islemir -->
+            <br />
+            <small>Doğum gününde Nike Üye Ödülü kazan.</small>
+            <br /><br />
+            <div id="check">
+                <input type="checkbox" name="check" value="">
+                <label for="checkbox" class="text4">Nike'tan ürünler, teklifler ve Üye avantajlarına yönelik 
+                 güncellemeler  almak için e-postalara kaydol.</label>
+            </div>
+            <div id="check2">
+                <br />
+                <input type="checkbox" name="check2" value="">
+                <label for="checkbox">Nike'ın <ins>Gizlilik Politikası</ins> ve <ins>Kullanım Şartları'nı</ins>
+                 kabul ediyorum.</label>
+            </div>
+            <br /><br />
+            <button class="button" onclick="alert('Bu isimde hesap mövcut')" type="submit">Hesap Oluştur</button>
+        </form>
+    </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
