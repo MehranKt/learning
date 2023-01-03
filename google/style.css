@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: #111;
+    height: calc(100vh-5px) ;
+}
+.header{
+    height: 50px; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #202124;
+    color: #e8eaed;
+    margin: 5px;
+}
+.header__links{
+    margin-right: 30px;
+}
+a{
+    color: #e8eaed;
+    margin-right: 10px;
+    
+}
+.header__icons{
+    margin-right: 20px;
+}
+.icon{
+    margin-right: 15px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 100px;   
+}
+.content__img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.content__img img{
+    width: 20%;
+}
+.content__input{
+    width: 600px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #202124;
+    border-radius: 20px;
+    margin-top: 30px;
+    border: 1px solid white;
+}
+.right{
+    width: 30px;
+}
+.left{
+    width: 30px;
+    margin-left: 10px;
+}
+input{
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    
+}
+.content__input:hover{
+    border: none;
+    background-color: #333;
+}
+.content__button{
+    margin-top: 20px;
+}
+.content__button button{
+    padding: 15px ;
+    background-color: #202124;
+    border: none;
+    color: white;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+.content__lang{
+    color: white;
+    margin-top: 20px;
+}
+.content__lang span{
+    margin-right: 20px;
+}
+footer{
+    background-color: #202124;
+    height: 100px;
+    margin-top: 215px;
+}
+.footer__top{
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    padding-left: 40px;
+    border-bottom: 1px solid white;
+}
+.footer__bottom{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.footer__bottom-left{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    margin-left: 40px;
+}
+.footer__bottom-right{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    margin-right: 40px;
+}
